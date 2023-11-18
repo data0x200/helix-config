@@ -1,0 +1,51 @@
+theme = 'darcula-solid'
+
+[editor]
+true-color = true
+cursorline = true
+color-modes = true
+auto-completion = true
+
+[editor.whitespace.render]
+space = "all"
+nbsp = "all"
+tab = "all"
+tabpad = "all"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = ["version-control"]
+right = ["file-type", "diagnostics", "selections", "register", "position", "file-encoding"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[keys.normal]
+"0" = "goto_line_start"
+"$" = "goto_line_end"
+"C-x" = { "C-s" = ":w"}
+"C-]" = "goto_definition"
+"A-x" = "command_palette"
+"D" = "kill_to_line_end"
+"G" = "goto_last_line"
+
+[keys.normal.g]
+"G" = "goto_last_line"
+
+[keys.normal.space]
+"." = ":config-open"
+"," = ":config-reload"
+
+[keys.insert]
+"C-b" = "move_char_left"
+"C-f" = "move_char_right"
+"C-a" = "goto_line_start"
+"C-e" = "goto_line_end_newline"
+"C-n" = "move_visual_line_down"
+"C-p" = "move_visual_line_up"
