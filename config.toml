@@ -29,11 +29,11 @@ insert = "bar"
 [keys.normal]
 "0" = "goto_line_start"
 "$" = "goto_line_end"
-"C-x" = { "C-s" = ":w"}
 "C-]" = "goto_definition"
 "A-x" = "command_palette"
 "D" = "kill_to_line_end"
 "G" = "goto_last_line"
+"C-x" = { "C-s" = ":w" }
 
 [keys.normal.g]
 "G" = "goto_last_line"
@@ -49,3 +49,7 @@ insert = "bar"
 "C-e" = "goto_line_end_newline"
 "C-n" = "move_visual_line_down"
 "C-p" = "move_visual_line_up"
+
+[keys.select]
+"0" = "goto_line_start"
+"$" = "goto_line_end"
